@@ -35,7 +35,7 @@ currentMonth = datetime.now().month
 currentYear = datetime.now().year
 
 # carregar dados do YT .csv
-csvFile = open(tabelaYt)
+csvFile = open(tabelaYt, encoding='utf-8')
 csvReader = csv.DictReader(csvFile)
 ytData = list(csvReader)
 # csvWriter =
